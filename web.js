@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var fs = require('fs');
+
 var infile = "index.html";
 var inString = fs.readFileSync(infile);
 
