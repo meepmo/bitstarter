@@ -2,22 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>the bub hub</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purity Bootstrap Business Theme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
         <meta name="description" content="">
         <meta name="author" content="">
 
-		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css" />
-		<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css" />
-        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'> 
 
         <!--Le HTML5 shim, for IE6-8 support of HTML5 elements--> 
         <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
        <!-- Le styles -->
-	   
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all" />
@@ -26,7 +22,7 @@
         <link href="css/isotope.css" rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
-  
+        <link href="css/narrow.css" rel="stylesheet" type="text/css" />
         <!-- Le fav and touch icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
@@ -38,7 +34,6 @@
     </head>
 
     <body>
-<!-- This section is for Splash Screen -->
 
         <!--################ NAVIGATION START ################-->
 
@@ -51,11 +46,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="brand" href="#">  the<b>bub</b>hub</a>
+                        <a class="brand" href="#">  <img src="images/logo.png" width="150" id="logokhan"></a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
+
                                 <li class="active">
                                     <a href="#top">Home</a>
+
                                 </li>
                                 <li class="">
                                     <a href="#features">Features</a>
@@ -66,6 +63,7 @@
                                 <li class="">
                                     <a href="#testimonials">Testimonials</a>
                                 </li>
+
                                 <li class="">
                                     <a href="#contact">Contact</a>
                                 </li>
@@ -80,17 +78,19 @@
                                             <input id="user_username"  type="text" name="user[username]" size="33" placeholder="Username" />
                                             <input id="user_password"  type="password" name="user[password]" size="33" placeholder="Password" />
                                             <label class="checkbox muted hidden-tablet"><input type="checkbox"> Remember Me</label>
-                                            <input class="btn span3"  type="submit" name="commit" value="Sign In" />
+                                            <input class="btn  span3"  type="submit" name="commit" value="Sign In" />
                                         </form>
+
                                     </div>
                                 </li>
-                            </ul><!-- /.nav pull-right -->
-                        </div><!-- /.nav-collapse collapse -->
-						
-                    </div><!-- /.container -->
-                </div><!-- /.navbar-inner -->
-            </div><!-- /.navbar navbar-fixed-top -->
-        </div><!-- /.navbar-wrapper -->
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!--################ NAVIGATION END ################-->
@@ -104,94 +104,60 @@
             <header id="top" data-stellar-background-ratio="0">
                 <div class="container home">
 
-					<div class="row-fluid margintop10">
-						<div class="span5 bitstarter-box">
-							<div class="span8 offset2 statistics">
-								<div class="span4">
-									<div class="linediv-l">
-										<h3>1,210</h3> <p>backers</p>
-									</div>
-								</div>
-								<div class="span4">
-									<div class="linediv-c">
-										<h3>$6,550</h3> <p>of $12,000</p>
-									</div>
-								</div>
-								<div class="span4">
-									<div class="linediv-r">
-										<h3>100</h3> <p>days left</p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="span9 offset1">
-								<div class="thermometer progress progress-warning">
-									<div class="bar" style="width: 55%"></div>
-								</div>
-							</div>
-							
-							<div class="span11" style="text-align: center">
-								<button class="btn btn-large">Be a sponsor</button>
-							</div>
-						</div><!-- /.bitstarter-box -->
-						
-						<div class="span7">
-                    		<div class="flexslider home">
-	                       		<ul class="slides">
-		                            <li class="margintop">
-										<h1><i class="icon-ok-circle icon-2x"></i>
-											<i class="icon-lock icon-2x"></i>
-											<i class="icon-globe icon-2x"></i>
-											<br />a secure place 
-											<br />to share your baby's life 
-											<br /><b>with family and friends</b></h1>
-									</li>
 
-		                            <li class="margin5">
-										<div class="span6 animated fadeInDownBig">
-											<h1>share only 
-												<br />what you want 
-												<br /><b>when you want</b></h1>
-										</div>
-		                                <div class="span5 animated fadeInRightBig" id="main-media">
-											<iframe src="http://player.vimeo.com/video/63819688" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-		                                </div>                               
-		                            </li>
-							
-		                            <li>
-		                                <div class="span4 animated fadeInLeftBig">
-		                                    <h1><i class="icon-tablet"></i><i class="icon-mobile-phone"></i><i class="icon-desktop"></i>
-												<br />view the app
-												<br /> wherever you are</h1>
-		                                </div>
-		                                <div class="span7 animated fadeInRightBig">
-		                                    <img src="images/responsive.png">
-		                                </div>
-		                            </li>
-							
-		                            <li class="margintop10p">
-										<h1>
-											<i class="icon-envelope icon-2x"></i><i class="icon-lock icon-2x"></i><i class="icon-globe icon-2x"></i>
-											<br />invite friends and family
-											<br />wherever they are 
-											<br />in the world
-										</h1>
-									</li>
-		                        </ul><!-- /.slides -->
-                    		</div><!-- /.flexslider home -->
-						</div><!-- /.span7 -->
-					</div><!-- /.row-fluid -->
+                    <div class="flexslider home">
+                        <ul class="slides">
+                            <li>
+                                <div class="span7 animated fadeInLeftBig">
+                                    <img src="images/responsive.png">
+                                </div>
+                                <div class="span4 margintop10p animated fadeInDownBig">
 
-                    <div class="social-header hidden-phone">
-						<p>Stay updated with the latest news:</p>
-                        <a href="#" class="social-network sn2 facebook"></a>
-						<a href="#" class="social-network sn2 twitter"></a>
+                                    <h1><i class="icon-tablet"></i><i class="icon-mobile-phone"></i><i class="icon-desktop"></i><br />full responsive</h1>
+                                </div>
+
+                            </li>
+                            <li class="margin5">
+                                <div class="span6 animated fadeInLeftBig" id="main-media">
+                                    <iframe src="http://player.vimeo.com/video/56072786" width="580" height="240" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                </div>
+                                <div class="span5">
+                                    <h1>a complete parallex template for your needs</h1>
+
+                                </div>
+
+                            </li>
+                            <li class="margintop10p"><h1><i class="icon-tablet"></i><i class="icon-mobile-phone"></i><i class="icon-desktop"></i><br />and yes its full responsive </h1></li>
+                            <li class="margintop10p"><h1><i class="icon-eye-open icon-2x"></i><br />oh! did i mentioned, its retina ready...</h1></li>
+
+
+                        </ul>
+
                     </div>
 
-				</div><!-- /.container home -->
+                    <div class="social-header hidden-phone">
+
+                        <a href="#" class="social-network sn2 behance"></a>
+                        <a href="#" class="social-network sn2 facebook"></a>
+                        <a href="#" class="social-network sn2 pinterest"></a>
+                        <a href="#" class="social-network sn2 flickr"></a>
+                        <a href="#" class="social-network sn2 dribbble"></a>
+                        <a href="#" class="social-network sn2 lastfm"></a>
+                        <a href="#" class="social-network sn2 forrst"></a>
+                        <a href="#" class="social-network sn2 xing"></a>   
+
+
+                    </div>
+
+                </div>
+
+
+
 
                 <div id="home-arrow" class="hidden-phone">
+
                     <a href="#features"  ><i class="icon-double-angle-down icon-3x" id="iconHome"></i></a>
+
                 </div>
             </header>
 
@@ -205,29 +171,30 @@
             <section  id="features" >
 
                 <div id="features-banner" data-stellar-background-ratio="0" >
+
                     <h1>Our Features</h1>
-                    <p class="sub-heading-support">NOT JUST ANOTHER SOCIAL NETWORK</p>
+                    <p class="sub-heading-support">WHY ARE WE THE BEST</p>
                 </div>
 
                 <div class="container">
 
                     <div class="row margintop20">
-                        <div class="span4">
-                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/2tpRxeY.png">all about bub</h2>
-                            <p>No grown ups allowed! We've carved out a special nook on the web just for your baby. No more piggybacking on your profile, no more random lurkers viewing your baby's pictures on your page, and no more unneccessary apps. Best of all, it's free!</p>
-                        </div><!-- /.span4 -->
-                        <div class="span4">
-							<h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/ecbaRjY.png">tools you'll love</h2>
-                            <p>Create and import albums, and link pictures to baby's milestones. Create slideshows, photo books, or print your own book from your diary entries to baby. Plan baby's parties using our <b>party</b>hub&trade; tool, and track baby's growth through <b>medi</b>hub&trade;.</p>
 
-                        </div><!-- /.span4 -->
                         <div class="span4">
-                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/bdbxwxb.png">safe, secure, yours</h2>
-                            <p>Your baby's information will always be secure, and is always going to be 100% yours. Friends and family only see what you want them to see, and only when you've e-vited them. Delete baby's profile in one simple step, with absolutely no crumbs left.</p>
+                            <h2><i class="icon-briefcase"></i> Innovative</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. </p>
+                        </div><!-- /span4 -->
+                        <div class="span4">
+                            <h2><i class="icon-bullhorn"></i> Clean</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. </p>
 
-                        </div><!-- /.span4 -->
-                    </div><!-- /.row -->
+                        </div><!-- /span4 -->
+                        <div class="span4">
+                            <h2><i class="icon-bar-chart"></i> Sexy</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh.</p>
 
+                        </div><!-- /span4 -->
+                    </div>
                     <hr class="line">
                     <div class="row">
                         <div class="span12">
@@ -278,13 +245,19 @@
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
                                     </div>
                                 </li>
-                            </ul><!-- /.thumbnails -->
-                        </div><!-- /.span12 -->
-                    </div><!-- /.row -->
+                            </ul>
+                        </div>
+                    </div>
 
-                </div><!-- /.container -->
+
+                </div>
+
+
 
             </section>
+
+
+
 
             <!--################ FEATURES SECTION END ################-->
 
@@ -295,7 +268,7 @@
 
             <section id="support" class="paddingbottom40">
                 <div id="support-banner" data-stellar-background-ratio="0.5" >
-					
+
                     <div id="carousel_fade_1" class="carousel slide carousel-fade">
 
                         <div class="carousel-inner">
@@ -762,8 +735,8 @@
                     <hr class="line">
                     <div class="row">
                         <div class="span12 center">
-                            <h1 class="big-heading">The Game Plan</h1>
-                            <h4 class="sub-heading">Rolling features out in phases</h4>
+                            <h1 class="big-heading">Pricing</h1>
+                            <h4 class="sub-heading">clean pricing tables of every size</h4>
 
 
 
@@ -774,7 +747,7 @@
                     <div class="row" id="pricing">
                         <div class="span3">
                             <div class="price-plan price-plan-business">
-                                <h2>PHASE 1</h2>
+                                <h2>FREE</h2>
 
                                 <div class="price">
                                     <div class="inside">
@@ -807,7 +780,7 @@
                                 </div>
                                 <div class="most-popular">
                                     <span>
-                                        <p>Phase 2</p>
+                                        <p>Popular</p>
                                     </span>
                                 </div>
                                 <div class="info">
@@ -1096,7 +1069,6 @@
         <script src="js/portfolio.js"></script>
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/retina.js"></script>
-
         <!--     
         *************** RETINA JS FUNCTIONALITY   ****************
         
