@@ -1,521 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>the bub hub</title> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" type="text/css">
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" type="text/css">
-		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" type="text/css">
-		<link rel="stylesheet" href="https://github.com/daneden/animate.css/blob/master/animate.min.css" type="text/css">
-		
-		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js" type="text/javascript"></script>
-		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js" type="text/javascript"></script>
-		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic%22" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css">
-		<style type="text/css">
-		/* Large desktop */
-		@media (min-width: 980px) {
-			.linediv-l {
-				border-right: 1px white solid;
-			}
-			.linediv-r {
-				border-left: 1px white solid;
-			}
-		}
+    <head>
+        <meta charset="utf-8">
+        <title>the bub hub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="buburbia">
 
-		
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 
-		/* All form factors */
-
-		/* Main body and headings */
-		html, body {
-			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-			height: 100%;
-			text-rendering: optimizelegibility;
-		}
-		.heading, .subheading {
-			font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-		}
-		b {
-			color: #ffa333;
-		}
-		.logo {
-			font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-			font-size: 28px!important;
-		}
-		p.lead {
-			color: #222222;
-			margin-top:	40px;
-			font-size: 40px;
-			font-weight: bold;
-			line-height: 30px;
-		}
-		p {
-			margin-top: 20px;
-			font-size: 16px;
-			line-height: 26px;
-		}
-		.container {
-			height: 100%;
-		}
-		.row-fluid {
-			padding-left: 20px;
-		}
-
-		/* Video pitch and Action */
-		.order {
-			padding: 2% 0%;
-		}
-		
-		.actions {
-			background: #45484d; /* Old browsers */
-			background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-			padding: 3% 0%;
-		}
-		.video, .thermometer, .order, .statistics {
-			text-align: center;
-		}
-		.statistics h3, .statistics p {
-			color: #ffffff;
-		}
-
-		/* Marketing Copy and Footer */
-		.copy {
-			padding-top: 2.5%;
-			padding-bottom: 2.5%;
-			text-align: justify;
-		}
-		.asset {
-			padding: 2.5% 0%;
-		}
-		.footer {
-			color: #cccccc;
-			text-align: center;
-		}
-		.footer p {
-			font-size: 11px;
-		}
-		.footer a {
-			color: #ccccff;
-		}
-		
-		/* CUSTOMIZE THE NAVBAR
-		-------------------------------------------------- */
-
-		/* Special class on .container surrounding .navbar, used for positioning it into place. */
-		.navbar-wrapper {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  right: 0;
-		  z-index: 10;
-		  margin-top: 20px;
-		}
-		.navbar-wrapper .navbar {
-
-		}
-
-		/* Remove border and change up box shadow for more contrast */
-		.navbar .navbar-inner {
-		  border: 0;
-		  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-			 -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-				  box-shadow: 0 2px 10px rgba(0,0,0,.25);
-		}
-
-		/* Downsize the brand/project name a bit */
-		.navbar .brand {
-		  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-		  font-size: 16px;
-		  font-weight: bold;
-		  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-		}
-
-		/* Navbar links: increase padding for taller navbar */
-		.navbar .nav > li > a {
-		  padding: 15px 20px;
-		}
-
-		/* Offset the responsive button for proper vertical alignment */
-		.navbar .btn-navbar {
-		  margin-top: 10px;
-		}
+        <!--Le HTML5 shim, for IE6-8 support of HTML5 elements--> 
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+       <!-- Le styles -->
+	   
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=1.0.2" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" />
+        <link href="css/isotope.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/style-responsive.css" rel="stylesheet" type="text/css" />
+  
+        <!-- Le fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favicon.png">
 
 
+    </head>
 
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
+    <body>
+<!-- This section is for Splash Screen -->
 
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
+        <!--################ NAVIGATION START ################-->
 
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
+        <div class="navbar-wrapper" >
+            <div class="navbar navbar-fixed-top" id="navigation">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="brand" href="#">  the<b>bub</b>hub</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li class="active">
+                                    <a href="#top">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#features">Features</a>
+                                </li>
+                                <li class="">
+                                    <a href="#support">Services</a>
+                                </li>
+                                <li class="">
+                                    <a href="#testimonials">Testimonials</a>
+                                </li>
+                                <li class="">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                                <li class="">
+                                    <a data-toggle="modal" href="#myModal" class="">Sign Up</a>
+                                </li>
 
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
-
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-		body {	
-			padding: 0;
-		}
-		
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-    }
-	
-	
-		/* Additional Styles */
-		.background-pitch {
-			background: url('http://i.imgur.com/dBUU7j1.jpg') no-repeat; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			background-position: center center;
-			height: 100%;
-		}
-			.background-pitch p.content {
-				font-size: 30px;
-				line-height: 40px;
-			}
-				.background-pitch p.content b {
-					color: #333333;
-				}
-		#features {
-			display: block;
-			z-index: 1000;
-		}
-		.background-features {
-			background: url('http://i.imgur.com/wMhwHmZ.jpg') no-repeat; -webkit-background-size: cover;
-			-moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            background-position: center center;
-			height: 400px;
-			color: #ffffff;
-			text-align: center;
-		}
-			.features-banner {
-				text-shadow: 1px 1px 1px #000;
-			}
-			.background-features h1 {
-				font-size: 75px;
-				margin-top: 150px;
-			} 
-			.background-features h2 {
-				letter-spacing: 1px;
-				font-weight: 300;
-				font-size: 18px;
-			}
-		.feature-content h2 {
-			color: #ffa333;
-			font-weight: 300;
-			font-size: 50px;
-			line-height: 50px;
-		}
-	
-		.background-2
-		
-		{
-			background: rgb(89,106,114); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(89,106,114,1) 0%, rgba(206,220,231,1) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(89,106,114,1)), color-stop(100%,rgba(206,220,231,1))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=0 ); /* IE6-9 */
-		}
-		
-		/* Large desktop */
-		@media (min-width: 1200px) { 
-
-
-		}
-
-		* Portrait tablet to landscape and desktop */
-		@media (min-width: 768px) and (max-width: 979px) { 
-			
-		}
-		
-		/* Landscape phone to portrait tablet */
-		@media (max-width: 767px) {
-			 section {
-				margin-left: -20px;
-				margin-right: -20px;
-			}
-			.container{
-				padding-left: 20px; 
-				padding-right: 20px;
-			}
-		}
-		
-		/* Landscape phones and down */
-		@media (max-width: 480px) {
-			p.lead {
-				font-size: 20px;
-				margin-top: -40px;
-			}
-			.background-pitch p.content {
-				font-size: 16px;
-			}
-			.copy {
-				padding: 2.5% 10%;
-			}
-			.linediv-l {
-				border-bottom: 1px white solid;
-			}
-			.linediv-r {
-				border-top: 1px white solid;
-			}
-			section {
-				margin-left: -20px;
-				margin-right: -20px;
-			}
-			.container {
-				padding-left: 20px; 
-				padding-right: 20px;
-			}
-		}
-		</style>
-	</head>
-	
-	<body>
-		<div class="navbar-wrapper">
-			<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-			<div class="container">
-				<div class="navbar navbar-inverse">
-					<div class="navbar-inner">
-						<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-						<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
+                                    <div class="dropdown-menu" style="padding: 15px;">
+                                        <form action="#" method="post" accept-charset="UTF-8" class="form-menu">
+                                            <input id="user_username"  type="text" name="user[username]" size="33" placeholder="Username" />
+                                            <input id="user_password"  type="password" name="user[password]" size="33" placeholder="Password" />
+                                            <label class="checkbox muted hidden-tablet"><input type="checkbox"> Remember Me</label>
+                                            <input class="btn span3"  type="submit" name="commit" value="Sign In" />
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul><!-- /.nav pull-right -->
+                        </div><!-- /.nav-collapse collapse -->
 						
-						<a class="brand logo" href="#">the<b>bub</b>hub</a>
-						<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-						<div class="nav-collapse collapse">
-							<ul class="nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#features">Features</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</div><!--/.nav-collapse -->
-					</div><!-- /.navbar-inner -->
-				</div><!-- /.navbar -->
+                    </div><!-- /.container -->
+                </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar navbar-fixed-top -->
+        </div><!-- /.navbar-wrapper -->
 
-			</div> <!-- /.container -->
-		</div><!-- /.navbar-wrapper -->
-		
-		<header class="background-pitch">
-			<div class="container">			
-				<div class="row">
-					<div class="span12" style="height: 50px"></div>
-				</div>
-					
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="subheading">
-							<p class="lead">Where <b>baby</b> is the star.</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row-fluid">		
-					<div class="span12" style="height: 20px"></div>
-				</div>
-				
-				<div class="row-fluid">
-					<div class="span4">
-						<p class="content">Finally, a safe haven on the web for you to share your baby's life with friends and family.</p>
-						<p class="content">Share only what you want <b>when you want</b>.</p>
-					</div>
-				
-					<div class="span5 offset2 actions">
-						<div class="span8 offset2">
-							<div class="statistics">
+
+        <!--################ NAVIGATION END ################-->
+
+        <!--################ WRAP START ################-->
+
+        <div id="wrap">
+
+            <!--################ HEADER START ################-->
+
+            <header id="top" data-stellar-background-ratio="0">
+                <div class="container home">
+
+					<div class="row-fluid margintop10">
+						<div class="span5 bitstarter-box">
+							<div class="span8 offset2 statistics">
 								<div class="span4">
-									<!-- linediv-l and linediv-r give dividing lines that look
-									different in horizontal and vertical laoyuts, illustrating
-									media queries. -->
 									<div class="linediv-l">
-										<h3>1,021</h3> <p>backers</p>
+										<h3>1,210</h3> <p>backers</p>
 									</div>
 								</div>
 								<div class="span4">
@@ -529,47 +123,1052 @@
 									</div>
 								</div>
 							</div>
-						</div>									
-					
-						<div class="span9 offset1">
-							<!-- Bootstrap progress bar -->
-							<!-- http://twitter.github.io/bootstrap/components.html#progress -->
-							<div class="thermometer progress progress-striped">
-								<div class="bar" style="width: 55%"></div>
+							
+							<div class="span9 offset1">
+								<div class="thermometer progress progress-warning">
+									<div class="bar" style="width: 55%"></div>
+								</div>
 							</div>
-						</div>
-						<div class="span6 offset3 order">
-							<!-- Standard Bootstrap button. -->
-							<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-							<button class="btn btn-warning btn-large">Be a sponsor</button>
-						</div>
-						<div class="span6 offset3"></div>
-					</div>
-				</div><!--/.row-fluid pitch -->
-					
-				<div class="row-fluid">
-					<div class="span3" style="border-top: solid 1px #000000; padding-top: 20px">
-						<h5>Stay updated with the latest news!</h5>
-						<!-- Social buttons are not included in default Bootstrap. -->
-						<!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-						<button class="btn btn-mini btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-						<button class="btn btn-mini btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-					</div>
-				</div>		
-				
-				
-			</div><!-- /.container -->
-		</header><!-- /.background-pitch -->
+							
+							<div class="span11" style="text-align: center">
+								<button class="btn btn-large">Be a sponsor</button>
+							</div>
+						</div><!-- /.bitstarter-box -->
+						
+						<div class="span7">
+                    		<div class="flexslider home">
+	                       		<ul class="slides">
+		                            <li class="margintop">
+										<h1><i class="icon-ok-circle icon-2x"></i>
+											<i class="icon-lock icon-2x"></i>
+											<i class="icon-globe icon-2x"></i>
+											<br />a secure place 
+											<br />to share your baby's life 
+											<br /><b>with family and friends</b></h1>
+									</li>
 
-		<section id="features" class="background-features">
-				<div class="container features-banner">
-					<div class="row-fluid">
-						<div class="span12">
-							<h1>Our Features</h1>
-							<h2>NOT JUST ANOTHER SOCIAL NETWORK</h2>
-						</div>
-					</div>
-				</div>
-		</section>
-	</body>
+		                            <li class="margin5">
+										<div class="span6 animated fadeInDownBig">
+											<h1>share only 
+												<br />what you want 
+												<br /><b>when you want</b></h1>
+										</div>
+		                                <div class="span5 animated fadeInRightBig" id="main-media">
+											<iframe src="http://player.vimeo.com/video/63819688" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		                                </div>                               
+		                            </li>
+							
+		                            <li>
+		                                <div class="span4 animated fadeInLeftBig">
+		                                    <h1><i class="icon-tablet"></i><i class="icon-mobile-phone"></i><i class="icon-desktop"></i>
+												<br />view the app
+												<br /> wherever you are</h1>
+		                                </div>
+		                                <div class="span7 animated fadeInRightBig">
+		                                    <img src="images/responsive.png">
+		                                </div>
+		                            </li>
+							
+		                            <li class="margintop10p">
+										<h1>
+											<i class="icon-envelope icon-2x"></i><i class="icon-lock icon-2x"></i><i class="icon-globe icon-2x"></i>
+											<br />invite friends and family
+											<br />wherever they are 
+											<br />in the world
+										</h1>
+									</li>
+		                        </ul><!-- /.slides -->
+                    		</div><!-- /.flexslider home -->
+						</div><!-- /.span7 -->
+					</div><!-- /.row-fluid -->
+
+                    <div class="social-header hidden-phone">
+						<p>Stay updated with the latest news:</p>
+                        <a href="#" class="social-network sn2 facebook"></a>
+						<a href="#" class="social-network sn2 twitter"></a>
+                    </div>
+
+				</div><!-- /.container home -->
+
+                <div id="home-arrow" class="hidden-phone">
+                    <a href="#features"  ><i class="icon-double-angle-down icon-3x" id="iconHome"></i></a>
+                </div>
+            </header>
+
+            <!--################ HEADER END ################-->
+
+            <!--################ MAIN CONTAINER START ################-->
+
+
+
+            <!--################ FEATURES SECTION START ################-->
+            <section  id="features" >
+
+                <div id="features-banner" data-stellar-background-ratio="0" >
+                    <h1>Our Features</h1>
+                    <p class="sub-heading-support">NOT JUST ANOTHER SOCIAL NETWORK</p>
+                </div>
+
+                <div class="container">
+
+                    <div class="row margintop20">
+                        <div class="span4">
+                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/2tpRxeY.png">all about bub</h2>
+                            <p>No grown ups allowed! We've carved out a special nook on the web just for your baby. No more piggybacking on your profile, no more random lurkers viewing your baby's pictures on your page, and no more unneccessary apps. Best of all, it's free!</p>
+                        </div><!-- /.span4 -->
+                        <div class="span4">
+							<h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/ecbaRjY.png">tools you'll love</h2>
+                            <p>Create and import albums, and link pictures to baby's milestones. Create slideshows, photo books, or print your own book from your diary entries to baby. Plan baby's parties using our <b>party</b>hub&trade; tool, and track baby's growth through <b>medi</b>hub&trade;.</p>
+
+                        </div><!-- /.span4 -->
+                        <div class="span4">
+                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/bdbxwxb.png">safe, secure, yours</h2>
+                            <p>Your baby's information will always be secure, and is always going to be 100% yours. Friends and family only see what you want them to see, and only when you've e-vited them. Delete baby's profile in one simple step, with absolutely no crumbs left.</p>
+
+                        </div><!-- /.span4 -->
+                    </div><!-- /.row -->
+
+                    <hr class="line">
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="thumbnails">
+                                <li class="span3">
+
+                                    <div class="thumbnail border-left features">
+                                        <div class="feature-icon">
+                                            <i class="icon-cloud-download icon-10x color1"></i>
+                                        </div>
+                                        <!--<i class="icon-medkit icon-10x"></i>-->
+                                        <h4>Cloud Computing</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                    </div>
+                                </li>
+                                <li class="span3">
+
+                                    <div class="thumbnail border-none">
+                                        <div class="feature-icon">
+                                            <i class="icon-dashboard icon-10x color2"></i>
+                                        </div>
+                                        <!--<i class="icon-medkit icon-10x"></i>-->
+                                        <h4>Dashboard</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                    </div>
+                                </li>
+                                <li class="span3">
+
+                                    <div class="thumbnail border-right">
+                                        <div class="feature-icon">
+                                            <i class="icon-download icon-10x color3"></i>
+                                        </div>
+                                        <!--<i class="icon-medkit icon-10x"></i>-->
+                                        <h4>Downloads</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                    </div>
+                                </li>
+                                <li class="span3">
+
+                                    <div class="thumbnail border-right">
+                                        <div class="feature-icon">
+                                            <i class="icon-lock icon-10x color4"></i>
+                                        </div>
+                                        <!--<i class="icon-medkit icon-10x"></i>-->
+                                        <h4>Security</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                    </div>
+                                </li>
+                            </ul><!-- /.thumbnails -->
+                        </div><!-- /.span12 -->
+                    </div><!-- /.row -->
+
+                </div><!-- /.container -->
+
+            </section>
+
+            <!--################ FEATURES SECTION END ################-->
+
+
+
+            <!--################ SUPPORT SECTION START ################-->
+
+
+            <section id="support" class="paddingbottom40">
+                <div id="support-banner" data-stellar-background-ratio="0.5" >
+					
+                    <div id="carousel_fade_1" class="carousel slide carousel-fade">
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <h1><i class="icon-comments"></i> Spectacular Support</h1>
+                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+
+
+                            </div>
+                            <div class="item">
+                                <h1><i class="icon-double-angle-up"></i> Parallax Effect</h1>
+                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                            </div>
+                            <div class="item">
+                                <h1><i class="icon-desktop"></i> Retina Ready</h1>
+                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control left car-button" href="#carousel_fade_1" data-slide="prev"><i class="icon-chevron-left"></i></button>
+                        <button class="carousel-control right car-button" href="#carousel_fade_1" data-slide="next"><i class="icon-chevron-right"></i></button>
+
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="row center">
+
+
+                        <div class="span4 margintop20">
+                            <div class="row left">
+                                <div class="span1">
+                                    <i class="icon-phone support-icon color1"></i>
+                                </div>
+                                <div class="span3">
+                                    <h2>24/7/365</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4 margintop20">
+                            <div class="row left">
+                                <div class="span1"><i class="icon-comments support-icon color2"></i></div>
+                                <div class="span3">
+                                    <h2>Live Chat</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul></div>
+                            </div>
+                        </div>
+                        <div class="span4 margintop20">
+                            <div class="row left">
+                                <div class="span1"><i class="icon-group support-icon color3"></i></div>
+                                <div class="span3">
+                                    <h2>Community</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul></div>
+                            </div>
+                        </div>
+                        <div class="span4 margintop40">
+                            <div class="row left">
+                                <div class="span1"><i class="icon-facetime-video support-icon"></i></div>
+                                <div class="span3">
+                                    <h2>Tutorials</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul></div>
+                            </div>
+                        </div>
+                        <div class="span4 margintop40">
+                            <div class="row left">
+                                <div class="span1"><i class="icon-book support-icon"></i></div>
+                                <div class="span3">
+                                    <h2>Manual</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul></div>
+                            </div>
+                        </div>
+                        <div class="span4 margintop40">
+                            <div class="row left">
+                                <div class="span1"><i class="icon-file support-icon "></i></div>
+                                <div class="span3">
+                                    <h2>Docs</h2>
+                                    <ul class="unstyled">
+                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
+                                        <li><i class="icon-ok"></i> From your  dashboard</li>
+                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                    </ul></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+            <!--################ PORTFOLIO SECTION START ################-->
+
+            <section class="portfolio home-portfolio">
+
+                <div class="container" id="portfolio">
+
+                    <div class="row">
+                        <div class="span12 center">
+                            <h1 class="big-heading">Portfolio</h1>
+                            <h4 class="sub-heading">see come of our cool projects...</h4>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div id="filters_container">
+                                <ul id="filters">
+                                    <li><a href="#" data-filter="*" class="active">All</a></li>
+                                    <li class="separator">/</li>
+                                    <li><a href="#" data-filter=".video">Video</a></li>
+                                    <li class="separator">/</li>
+                                    <li><a href="#" data-filter=".art">Art</a></li>
+                                    <li class="separator">/</li>
+                                    <li><a href="#" data-filter=".illustration">Illustration</a></li>
+                                    <li class="separator">/</li>
+                                    <li><a href="#" data-filter=".print">Print</a></li>
+                                    <li class="separator">/</li>
+                                    <li><a href="#" data-filter=".web">Web</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="row" id="portfolio-container">
+                        <div class="span3 project art">
+
+                            <img src="images/project1.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Image</h5>
+
+                                <a href="images/project1.jpg" class="fancybox-media btn btn-normal" data-title-id="title-01"  rel="portfolio">View details</a>
+                            </div>
+
+                            <div id="title-01" class="info hidden">
+                                <h2>Image Detials</h2>
+                                <div class="fancybody">Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem <a href="#">lacinia quam</a> venenatis vestibulum. Maecenas sed diam eget risus varius.</div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                        <div class="span3 project web">
+
+                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="single-portfolio.html" class="fancybox-media btn btn-normal" >View details</a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="span3 project video">
+
+                            <img src="images/project1.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                             <div class="cnt">
+                                <h5>Video</h5>
+
+                                <a href="http://vimeo.com/24030911" class="fancybox-media btn btn-normal" data-title-id="title-03"  rel="portfolio">View details</a>
+                            </div>
+
+                            <div id="title-03" class="info hidden">
+                                <h2>Image Detials</h2>
+                                <div class="fancybody">Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem <a href="#">lacinia quam</a> venenatis vestibulum. Maecenas sed diam eget risus varius.</div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <div class="span3 project web print">
+
+                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="#" class="btn btn-normal">View details</a>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="span3 project art print">
+
+                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="#" class="btn btn-normal">View details</a>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="span3 project art web">
+
+                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="#" class="btn btn-normal">View details</a>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="span3 project print web">
+
+                            <img src="images/project1.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="#" class="btn btn-normal">View details</a>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="span3 project  web">
+
+                            <img src="images/project1.jpg" alt="" class="project-img">
+                            <span class="overlay"></span>
+                            <div class="cnt">
+                                <h5>Project</h5>
+
+                                <a href="#" class="btn btn-normal">View details</a>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!--################ TESTIMONIALS SECTION START ################-->
+
+
+            <section id="testimonials">
+                <div id="testimonials-background" data-stellar-background-ratio="0.5">
+
+                    <h1>Testimonials  <i class="icon-thumbs-up"></i></h1>
+                    <h2 class="sub-heading-support">What others say about us</h2>
+
+                </div>
+                <div class="container">
+                    <div class="row center margintop40">
+
+                        <div id="carousel_fade_2" class="span4 carousel slide carousel-fade">
+                            <div class="carousel-inner ">
+                                <div class="item  testimonial active">
+
+                                    <img src="images/face-1.png">
+                                    <h4>Fading Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+                                <div class="item  testimonial">
+                                     <img src="images/face-2.png">
+                                    <h4>Fading Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+                                <div class="item  testimonial">
+                                    <img src="images/face-3.png">
+                                    <h4>Fading Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+
+                            </div>
+                            <button class="carousel-control left car-button" href="#carousel_fade_2" data-slide="prev"><i class="icon-chevron-left"></i></button>
+                            <button class="carousel-control right car-button" href="#carousel_fade_2" data-slide="next"><i class="icon-chevron-right"></i></button>
+
+
+                        </div>
+
+                        <div id="carousel_vertical_testimonial" class="span4 carousel slide vertical">
+                            <div class="carousel-inner">
+                                <div class="item testimonial active">
+
+                                    <img src="images/face-1.png">
+                                    <h4>Sliding  Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+                                <div class="item  testimonial">
+                                    <img src="images/face-3.png">
+                                    <h4>Sliding  Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+                                <div class="item  testimonial">
+                                    <img src="images/face-2.png">
+                                    <h4>Sliding  Testimonials</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                                </div>
+
+                            </div>
+                            <button class="carousel-control left car-button" href="#carousel_vertical_testimonial" data-slide="prev"><i class="icon-chevron-left"></i></button>
+                            <button class="carousel-control right car-button" href="#carousel_vertical_testimonial" data-slide="next"><i class="icon-chevron-right"></i></button>
+
+
+                        </div>
+                        <div  class="span4">
+
+                            <div class="item  testimonial active">
+
+                                <img src="images/face-1.png">
+                                <h4>Static</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+            <!--################ TESTIMONIALS  SECTION END ################-->
+
+
+
+
+            <section id="call-to-action" class="margintop20 marginbot20">
+
+                <div class="call-to-action-link">
+                    <a href="#"><span>Buy it for your Next Project →</span></a>
+                </div>
+
+            </section>
+
+
+            <!--################ NEWS SECTION START ################-->
+
+
+            <section id="news" class="paddingbottom40">
+                <div class="container">
+
+                    <div class="row center">
+                        <div class="span12">
+                            <h1 class="big-heading">Latest News</h1>
+                            <p>Curabitur nisi mi, tincidunt a vehicula non, euismod sed felis.</p>
+                        </div>
+                    </div>
+                    <div class="row margintop40">
+                        <div class="span6 left shadowbox homepage-post">
+
+                            <div class="post-img picture"><img src="images/blog2.jpg" alt="" />
+                                <div class="overlay">
+                                    <div class="op"></div>
+                                    <ul class="icons">
+                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="post">
+
+                                <div class="headline"><h2 class="muted">news heading...</h2></div>
+                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>12th<br/>August</h2>
+
+                                </div>
+                                <div class="post-content margintop">
+                                    <div class="post-description">
+                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="span6 left shadowbox homepage-post">
+
+                            <div class="post-img picture"><img src="images/blog2.jpg" alt="" />
+
+                                <div class="overlay">
+                                    <div class="op"></div>
+                                    <ul class="icons">
+                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="post">
+
+                                <div class="headline"><h2 class="muted">post heading ...</h2></div>
+                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>21st<br/>March</h2>
+
+                                </div>
+                                <div class="post-content margintop">
+                                    <div class="post-description">
+                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <hr class="line">
+                    <div class="row">
+                        <div class="span12 center">
+                            <h1 class="big-heading">The Game Plan</h1>
+                            <h4 class="sub-heading">Rolling features out in phases</h4>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="row" id="pricing">
+                        <div class="span3">
+                            <div class="price-plan price-plan-business">
+                                <h2>PHASE 1</h2>
+
+                                <div class="price">
+                                    <div class="inside">
+                                        <span class="super">$</span><span class="amt">0</span> <span class="sub">/mo</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info">
+                                    <ul>
+                                        <li class="bold">Full Email Support</li>
+                                        <li>Unlimited User Interactions</li>
+
+                                        <li class="signup"><a href="#">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="span3">
+                            <div class="price-plan ">
+                                <h2>Starter</h2>
+
+                                <div class="price">
+                                    <div class="inside">
+                                        <span class="super">$</span><span class="amt">8</span> <span class="sub">/mo</span>
+                                    </div>
+
+                                </div>
+                                <div class="most-popular">
+                                    <span>
+                                        <p>Phase 2</p>
+                                    </span>
+                                </div>
+                                <div class="info">
+                                    <ul>
+                                        <li class="bold">Full Email Support</li>
+                                        <li class="bold">Unlimited User Interactions</li>
+                                        <li class="bold">Unlimited Pages</li>
+                                        <li>Mobile Store</li>
+                                        <li>Social Tracking</li>
+                                        <li class="signup"><a href="#">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="price-plan price-plan-business">
+                                <h2>BEST</h2>
+
+                                <div class="price">
+                                    <div class="inside">
+                                        <span class="super">$</span><span class="amt">24</span> <span class="sub">/mo</span>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <ul>
+                                        <li class="bold">Full Email Support</li>
+                                        <li class="bold">Ecommerce Addons</li>
+                                        <li>2 GB Storage</li>
+                                        <li>Custom Domain <span class="free">Free</span></li>
+                                        <li>24/7 Support</li>
+                                        <li>&nbsp;</li>
+                                        <li>&nbsp;</li>
+                                        <li class="signup"><a href="#">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="price-plan price-plan-unlimited">
+                                <h2>POPULAR</h2>
+
+                                <div class="price">
+                                    <div class="inside">
+                                        <span class="super">$</span><span class="amt">16</span> <span class="sub">/mo</span>
+                                    </div>
+
+                                    <div class="most-popular">
+                                        <span>
+                                            <p>New</p>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <ul>
+                                        <li class="bold">Unlimited Pages & Posts</li>
+                                        <li class="bold">Unlimited Bandwidth</li>
+                                        <li class="bold">Unlimited Storage</li>
+                                        <li class="bold">Unlimited Users</li>
+                                        <li>Responsive Website</li>
+                                        <li>Custom Domain <span class="free">Free</span></li>
+                                        <li>24x7 Support</li>
+                                        <li class="signup"><a href="#">SIGN UP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            <!--################ NEWS SECTION END ################-->
+
+
+            <!--################ CONTACT SECTION START ################-->
+
+
+            <section id="contact" class="margintop40">
+                <div id="contact-background" data-stellar-background-ratio="0" >
+
+                    <h1>Contact Us</h1>
+                    <p class="sub-heading-contact">WHERE WE WORK </p>
+                </div>
+                <div class="container">
+                    <div class="row margintop20">
+
+
+                        <div class="span6">
+                            <h2 class="big-h2-heading"><i  class="icon-envelope-alt"></i> Contact Us</h2>
+                            <p>Let us know what you think and we will get back to you with a cool reply!</p>
+                            <form class="form-main">
+
+                                <fieldset>
+                                    <div class="clearfix">
+                                        <label for="name"><span>Name:</span></label>
+                                        <div class="input">
+                                            <input  id="name" name="name" type="text" value="" class="input-xlarge">
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <label for="email"><span>Email:</span></label>
+                                        <div class="input">
+                                            <input  id="email" name="email" type="text" value="" class="input-xlarge">
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <label for="message"><span>Message:</span></label>
+                                        <div class="input">
+                                            <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="actions">
+                                        <button tabindex="3" type="submit" class="btn btn-landing ">Send</button>
+                                    </div>
+                                </fieldset>
+
+                            </form>
+                        </div>
+                        <div class="span5 offset1">
+                            <h2 class="big-h2-heading"><i  class="icon-map-marker"></i> Find Us</h2>
+                            <p>Let us know what you think and we will get back to you with a cool reply!</p>
+                            <p><i  class="icon-road"></i> Street Name - 1215/3, Our Land, Earth</p>
+                            <p><i  class="icon-home"></i> London</p>
+                            <p><i  class="icon-phone"></i> +1-234-56789</p>
+                            <iframe id="small-map" width="350" height="320" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;aq=0&amp;oq=Los&amp;sll=50.143066,18.85267&amp;sspn=0.057207,0.168915&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;ll=34.052234,-118.243685&amp;spn=0.036979,0.084457&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+            <!--################ CONTACT SECTION END ################-->
+
+
+
+
+
+
+
+            <!--################ BOTTOM SECTION START ################-->
+
+            <section id="bottom" class="paddingbot20">
+
+                <div class="row center">
+
+                    <h2>as seen on the</h2>
+                </div>
+                <div class="container">
+                    <div class="row center">
+                        <div class="as-seen">
+                            <div class="span2">
+                                <img src="images/client-1.png" alt="Tc">
+                            </div>
+                            <div class="span2">
+                                <img src="images/client-2.png" alt="Tc">
+                            </div>
+                            <div class="span2">
+                                <img src="images/client-3.png" alt="Tc">
+                            </div>
+                            <div class="span2">
+                                <img src="images/client-4.png" alt="Tc">
+                            </div>
+                            <div class="span2">
+                                <img src="images/client-5.png" alt="Tc">
+                            </div>
+                            <div class="span2">
+                                <img src="images/client-6.png" alt="Tc">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!--################ BOTTOM SECTION END ################-->
+
+
+        </div>
+
+        <!--################ PUSH WILL KEEP THE FOOTER AT BOTTOM IF YOU WANT TO CREATE OTHER PAGES ################-->
+
+        <div id="push"></div>
+
+
+        <!--################ FOOTER START ################-->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <!--<h2>about us...</h2>-->
+                        <img src="images/logo.png" >
+
+                        <!--<p><br /Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>-->
+                        <p><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+                        <p class="copyright">
+                            © 2013 Purity Bootstrap Template
+                        </p>
+                    </div>
+                    <div class="span2">
+                        <h2>links </h2>
+                        <ul class="unstyled footer-links">
+                            <li><a href="#" class="flink">About Us</a></li>
+                            <li><a href="#" class="flink">The Team</a></li>
+                            <li><a href="#" class="flink">Blog</a></li>
+                            <li><a href="#" class="flink">Contact</a></li>
+                            <li><a href="#" class="flink">Privacy Policy</a></li>
+                            <li><a href="#" class="flink">Terms of Use</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="span3">
+                        <h2>subscribe </h2>
+
+                        <a href="#" class="social-network sn2 behance"></a>
+                        <a href="#" class="social-network sn2 facebook"></a>
+                        <a href="#" class="social-network sn2 pinterest"></a>
+                        <a href="#" class="social-network sn2 flickr"></a>
+                        <a href="#" class="social-network sn2 dribbble"></a>
+                        <a href="#" class="social-network sn2 lastfm"></a>
+                        <a href="#" class="social-network sn2 forrst"></a>
+                        <a href="#" class="social-network sn2 xing"></a>      
+
+
+                    </div>
+
+                    <div class="span3">
+                        <h2 class="center"><i class="icon-twitter"></i></h2>
+                        <ul id="twitter" class="unstyled">
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!--################ FOOTER END ################-->
+
+
+
+
+        <!--################ JAVASCRIPTS ################-->
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/twitter.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.2"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.0"></script>
+        <script src="js/stellar.js"></script>
+        <script src="js/nicescroll.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/custom-home.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/retina.js"></script>
+
+        <!--     
+        *************** RETINA JS FUNCTIONALITY   ****************
+        
+        The script assumes you use Apple's prescribed high-resolution modifier (@2x) to denote
+        high-resolution image variants on your server.
+        
+        For example, if you have an image on your page that looks like this:
+        <img src="/images/my_image.png" />
+        
+        The script will check your server to see if an alternative image exists at this path:
+        "/images/my_image@2x.png"
+        
+        That's it! 
+        :)
+
+        <!--RETINA JS END-->
+
+
+        <!--REGISTER MODAL --> 
+
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Create a New Account</h3>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-vertical form-modal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                            <label class="control-label">Name</label>
+                            <div class="controls">
+                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xxlarge">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="control-group">
+                            <label class="control-label">Email</label>
+                            <div class="controls">
+                                <input id="textinput" name="textinput" type="text" placeholder="" class="input-xxlarge">
+
+                            </div>
+                        </div>
+
+
+
+
+                    </fieldset>
+                </form>
+
+
+
+
+            </div>
+            <div class="modal-footer">
+
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Create New Account</button>
+            </div>
+        </div>
+
+        <!--REGISTER MODAL END--> 
+
+
+
+
+    </body>
 </html>
