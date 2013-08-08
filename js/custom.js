@@ -31,6 +31,7 @@ $(document).ready(function() {
 
 			if (errorMessage.length > 0) {
 				$('#form-alert')
+					.removeClass('alert-success')
 					.addClass('alert-error')
 					.html('<b>Oops!</b> ' + errorMessage)
 					.show('500')
@@ -46,6 +47,7 @@ $(document).ready(function() {
 					data: $('.form-main').serialize(),
 					error: function() {
 						$('#form-alert')
+							.removeClass('alert-error')
 							.addClass('alert-success')
 							.html('<b>Thanks!</b> We\'ll be in touch!')
 							.show('500')
