@@ -3038,9 +3038,6 @@ input[type="submit"].btn.btn-mini {
   margin-top: 6px;
   color: #dcdcdc;
 }
-.navbar .brand b {
-	color: #ffa333;
-}
 .navbar .brand:hover {
 	color: #ffffff;
 	text-decoration: none;

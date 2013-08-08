@@ -52,12 +52,29 @@
     }
     .btn{height: 44px;}
     header{padding-top: 50px;}
+	
     #navigation .nav.page li.active:after{display: none;}
 	.linediv-l {
 		border-right: 1px white solid;
 	}
 	.linediv-r {
 		border-left: 1px white solid;
+	}
+	.tagline h2 {
+		font-size: 16px;
+		margin-left: -18px;
+		margin-top: 0;
+	}
+	#features-banner {
+		background-position: -200px 0;
+	}
+	#testimonials-background {
+		background-position: 0 0;
+	}	
+	.portfolio ul.list li {
+		font-size: 16px;
+		line-height: 30px;
+		margin-top: 10px;
 	}
 }
 
@@ -118,7 +135,23 @@
     header{padding-top: 75px;}
 
     #navigation .nav.page li.active:after{display: none;}
-    .navbar .brand{padding: 10px;}
+    .navbar .brand{padding: 20px 10px;}
+	.tagline h2 {
+		font-size: 22px;
+		margin-left: -30px;
+		margin-top: 0;
+	}
+	#features-banner {
+		background-position: -200px 0;
+	}
+	#testimonials-background {
+		background-position: 0 0;
+	}	
+	.portfolio ul.list li {
+		font-size: 16px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
 }
 
 
@@ -135,8 +168,9 @@
 /* Landscape phones and down */
 @media (max-width: 480px) { 
     #navigation .nav.page li.active:after{display: none;}
-    ul.slides{padding-top: 20px;}
-    .flexslider li h1{font-size: 40px;}
+    ul.slides{padding-top: 10px;}
+	.flexslider {margin-top: -20px;}
+    .flexslider li h1{font-size: 26px;}
 
     .flexslider li h1 i{font-size: 2em;}
 
@@ -149,6 +183,12 @@
         line-height: 80px;
     }
     h2{font-size: 36px;}
+	#features-banner {
+		background-position: -80px 0;
+	}
+	#testimonials-background {
+		background-position: 0 0;
+	}
     #testimonials-background h1, #support-banner h1, #features-banner h1,#contact-background h1 {
         font-size: 45px;
     }
@@ -166,6 +206,33 @@
     .navbar img{width: 200px; height: auto;}
     header{padding-top: 75px;}
     .navbar .brand{padding: 10px;}
+	
+	.tagline h2 {
+		font-size: 18px;
+		margin-left: -18px;
+		margin-top: 0;
+	}
+	
+	.bitstarter-box {
+		margin-top:	0;
+	}
+	
+	.bitstarter-box h3 {
+		font-size: 18px;
+		margin: 0;
+	}
+	.linediv-l {
+		border-bottom: 1px white solid;
+	}
+	.linediv-r {
+		border-top: 1px white solid;
+	}
+	.portfolio ul.list li {
+		font-size: 14px;
+		line-height: 30px;
+		margin-top: 10px;
+	}
 }
 
 iframe, object, embed{max-width: 100%;}
+
