@@ -338,6 +338,10 @@ hr.line {
     padding-bottom:40px;
 }
 
+.margintop0 {
+	margin-top: 0!important;
+}
+
 .center {
     text-align:center;
 }
@@ -431,6 +435,7 @@ footer img {
 /* News
 ------------------*/
 .homepage-post {
+	min-height: 650px;
     position:relative;
     margin-bottom: 10px;
 }
@@ -620,10 +625,11 @@ a.post-entry:hover {
 
 /*Testimonials*/
 #testimonials-background {
-    background-image:url(../images/gallery_bg.jpg);
+    background-image:url('http://farm1.staticflickr.com/27/97499962_5ed317e94b_b.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
+	background-position: 0 -140px;
     padding:150px 0;
     text-shadow:1px 1px 1px #000;
     background-size:cover;
@@ -2126,7 +2132,6 @@ a.flink:hover {
 }
 
 .social-header p {
-	color: #d8d8d8;
 	float: left;
 	font-weight: 600;
 	font-size: 12px;
@@ -2151,19 +2156,21 @@ a.flink:hover {
 }
 
 .color2 {
-    color:#FFC62E;
+    color:#db1f1f;
 }
 
 .color3 {
-    color:#2E9FFF;
+    color:#8BB82D;
 }
 
 .color4 {
-    color:#db1f1f;
+    color:#FFC62E;
 }
 
 /*Posts on Home Page*/
 .post-img {
+	max-height: 300px;
+	overflow: hidden !important;
     position:relative;
 }
 
@@ -3335,10 +3342,40 @@ section.typography{
     background-image: url(../images/fancy-loading.gif) !important;
 }
 
+/*NAVBAR*/
+/*-----------------------------------------------------------------------------------*/
+/*	NAVBAR
+/*-----------------------------------------------------------------------------------*/
+.navbar .brand b {
+	color: #ffa333;
+}
+
+/*HEADER ITEMS*/
+/*-----------------------------------------------------------------------------------*/
+/*	HEADER ITEMS
+/*-----------------------------------------------------------------------------------*/
+.tagline h2 {
+	color: #555555;
+	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-left: -18px;
+	margin-top: 40px;
+}
+.empty {
+	height: 0;
+	width: 0;
+}
+
+
 /*BITSTARTER*/
 /*-----------------------------------------------------------------------------------*/
 /*	BITSTARTER
 /*-----------------------------------------------------------------------------------*/
+.bitstarter-pitch .phone {
+	margin-top: 0;
+}
 .bitstarter-box {
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -3354,4 +3391,68 @@ section.typography{
 }
 .bitstarter-box .statistics {
 	text-align: center;
+}
+.bitstarter-pitch {
+	background: #e8e8e8;
+}
+
+
+/*SUPPORT*/
+/*-----------------------------------------------------------------------------------*/
+/*	SUPPORT
+/*-----------------------------------------------------------------------------------*/
+.support h2 {
+	font-size: 36px;
+}
+.support h4 {
+	margin-bottom: 0;
+}
+
+
+/*PORTFOLIO*/
+/*-----------------------------------------------------------------------------------*/
+/*	PORTFOLIO
+/*-----------------------------------------------------------------------------------*/
+.portfolio ul.list li {
+	color: #888888;
+	font-size: 20px;
+	line-height: 60px;
+	margin-top: -6px
+}
+.portfolio ul.list li b {
+	color: #707070;
+	font-weight: 600;
+}
+
+/*NEWS*/
+/*-----------------------------------------------------------------------------------*/
+/*	NEWS
+/*-----------------------------------------------------------------------------------*/
+.post-content .read-more {
+	background: #8AB833;
+	color: #333;
+	font-size: 12px;
+	padding: 0 4px;
+}
+
+/*CONTACT*/
+/*-----------------------------------------------------------------------------------*/
+/*	CONTACT
+/*-----------------------------------------------------------------------------------*/
+.form-main .alert {
+	display: none;
+}
+
+/*FOOTER*/
+/*-----------------------------------------------------------------------------------*/
+/*	FOOTER
+/*-----------------------------------------------------------------------------------*/
+#footer .brand {
+	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+	font-size: 30px;	
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+#footer .brand b {
+	color: #ffa333;
 }
