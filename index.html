@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>the bub hub</title>
+        <title>bub hubs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -19,7 +19,7 @@
        <!-- Le styles -->
 	   
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">		
         <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all" />
         <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=1.0.2" />
         <link href="css/animate.css" rel="stylesheet" type="text/css" />
@@ -34,7 +34,28 @@
         <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
         <link rel="shortcut icon" href="ico/favicon.png">
 
+		<style type="text/css">
+		<!--
+		div.addthis_toolbox {
+			width: 210px;
+			margin: 0 auto;
+		}
+		
+		-->
+		</style>
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-43006847-1']);
+		  _gaq.push(['_trackPageview']);
 
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
     </head>
 
     <body>
@@ -51,7 +72,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="brand" href="#">  the<b>bub</b>hub</a>
+                        <a class="brand" href="#"><b>bub</b>hubs</a>
                         <div class="nav-collapse collapse">
                             <ul class="nav pull-right">
                                 <li class="active">
@@ -61,28 +82,13 @@
                                     <a href="#features">Features</a>
                                 </li>
                                 <li class="">
-                                    <a href="#support">Services</a>
+                                    <a href="#support">The Extra Mile</a>
                                 </li>
                                 <li class="">
-                                    <a href="#testimonials">Testimonials</a>
+                                    <a href="#testimonials">FAQs</a>
                                 </li>
                                 <li class="">
                                     <a href="#contact">Contact</a>
-                                </li>
-                                <li class="">
-                                    <a data-toggle="modal" href="#myModal" class="">Sign Up</a>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
-                                    <div class="dropdown-menu" style="padding: 15px;">
-                                        <form action="#" method="post" accept-charset="UTF-8" class="form-menu">
-                                            <input id="user_username"  type="text" name="user[username]" size="33" placeholder="Username" />
-                                            <input id="user_password"  type="password" name="user[password]" size="33" placeholder="Password" />
-                                            <label class="checkbox muted hidden-tablet"><input type="checkbox"> Remember Me</label>
-                                            <input class="btn span3"  type="submit" name="commit" value="Sign In" />
-                                        </form>
-                                    </div>
                                 </li>
                             </ul><!-- /.nav pull-right -->
                         </div><!-- /.nav-collapse collapse -->
@@ -103,9 +109,59 @@
 
             <header id="top" data-stellar-background-ratio="0">
                 <div class="container home">
+					<div class="row-fluid margintop10 marginbot20">
+						<div class="tagline">
+								<h2>The responsible social network for families who want to build a better future.</h2>
+							</div>
+					</div>
+					
+					<div class="row-fluid">
+						<div class="span6">
+                    		<div class="flexslider home">
+	                       		<ul class="slides">
+		                            <li>
+										<h1><i class="icon-ok-circle icon-2x"></i>
+											<i class="icon-lock icon-2x"></i>
+											<i class="icon-globe icon-2x"></i>
+											<br />a secure place 
+											<br />to share your child's life 
+											<br /><b>with family and friends</b></h1>
+									</li>
 
-					<div class="row-fluid margintop10">
-						<div class="span5 bitstarter-box">
+		                            <li class="margin5">
+										<div class="span12 animated fadeInDownBig">
+											<h1>while helping to answer 
+												<br />the call for 
+												<br /><b>social responsibility</b></h1>
+										</div>
+		                            </li>
+							
+		                            <li>
+		                                <div class="span5 animated fadeInLeftBig">
+		                                    <h1><i class="icon-bullhorn"></i><i class="icon-group"></i><i class="icon-food"></i>
+												<br />be part of the solution 
+												<br />to hunger and food insecurity</h1>
+		                                </div>
+		                                <div class="span6">
+		                                    <img src="http://www.wfp.org/sites/default/files/HungerMap.jpg">
+		                                </div>
+		                            </li>
+							
+		                            <li class="margintop10p">
+										<h1>
+											<i class="icon-envelope icon-2x"></i><i class="icon-lock icon-2x"></i><i class="icon-globe icon-2x"></i>
+											<br />invite friends and family
+											<br />wherever they are 
+											<br />in the world
+										</h1>
+									</li>
+		                        </ul><!-- /.slides -->
+                    		</div><!-- /.flexslider home -->
+						</div><!-- /.span6 -->
+						
+						<div id="sponsor" class="empty"></div>
+						
+						<div class="span5 offset1 bitstarter-box hidden-phone">
 							<div class="span8 offset2 statistics">
 								<div class="span4">
 									<div class="linediv-l">
@@ -123,63 +179,40 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="span9 offset1">
 								<div class="thermometer progress progress-warning">
 									<div class="bar" style="width: 55%"></div>
 								</div>
 							</div>
+
+							<div class="span12 center">
+								<a 
+									class="coinbase-button" 
+									data-code="a58673bbd97f8fb0e0293c68427e1262" 
+									data-button-style="custom_large" 
+									data-button-text="Sponsor With Bitcoin" 
+									data-custom="bitstarter-bubhubs" 
+									href="https://coinbase.com/checkouts/a58673bbd97f8fb0e0293c68427e1262">
+										Sponsor With Bitcoin</a>
+									<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+							</div>
 							
-							<div class="span11" style="text-align: center">
-								<button class="btn btn-large">Be a sponsor</button>
+							<div class="span12">
+								<!-- AddThis Button BEGIN -->
+								<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+								<a class="addthis_button_preferred_1"></a>
+								<a class="addthis_button_preferred_2"></a>
+								<a class="addthis_button_preferred_3"></a>
+								<a class="addthis_button_compact"></a>
+								<a class="addthis_counter addthis_bubble_style"></a>
+								</div>
+								<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5202c63349dec955"></script>
+								<!-- AddThis Button END -->
 							</div>
 						</div><!-- /.bitstarter-box -->
 						
-						<div class="span7">
-                    		<div class="flexslider home">
-	                       		<ul class="slides">
-		                            <li class="margintop">
-										<h1><i class="icon-ok-circle icon-2x"></i>
-											<i class="icon-lock icon-2x"></i>
-											<i class="icon-globe icon-2x"></i>
-											<br />a secure place 
-											<br />to share your baby's life 
-											<br /><b>with family and friends</b></h1>
-									</li>
-
-		                            <li class="margin5">
-										<div class="span6 animated fadeInDownBig">
-											<h1>share only 
-												<br />what you want 
-												<br /><b>when you want</b></h1>
-										</div>
-		                                <div class="span5 animated fadeInRightBig" id="main-media">
-											<iframe src="http://player.vimeo.com/video/63819688" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-		                                </div>                               
-		                            </li>
-							
-		                            <li>
-		                                <div class="span4 animated fadeInLeftBig">
-		                                    <h1><i class="icon-tablet"></i><i class="icon-mobile-phone"></i><i class="icon-desktop"></i>
-												<br />view the app
-												<br /> wherever you are</h1>
-		                                </div>
-		                                <div class="span7 animated fadeInRightBig">
-		                                    <img src="images/responsive.png">
-		                                </div>
-		                            </li>
-							
-		                            <li class="margintop10p">
-										<h1>
-											<i class="icon-envelope icon-2x"></i><i class="icon-lock icon-2x"></i><i class="icon-globe icon-2x"></i>
-											<br />invite friends and family
-											<br />wherever they are 
-											<br />in the world
-										</h1>
-									</li>
-		                        </ul><!-- /.slides -->
-                    		</div><!-- /.flexslider home -->
-						</div><!-- /.span7 -->
 					</div><!-- /.row-fluid -->
 
                     <div class="social-header hidden-phone">
@@ -194,6 +227,46 @@
                     <a href="#features"  ><i class="icon-double-angle-down icon-3x" id="iconHome"></i></a>
                 </div>
             </header>
+			
+			<section class="bitstarter-pitch visible-phone">
+				<div class="bitstarter-box phone">
+					<div class="span8 offset2 statistics">
+						<div class="span4">
+							<div class="linediv-l">
+								<h3>1,210</h3> <p>backers</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-c">
+								<h3>$6,550</h3> <p>of $12,000</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-r">
+								<h3>100</h3> <p>days left</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="span9 offset1">
+						<div class="thermometer progress progress-warning">
+							<div class="bar" style="width: 55%"></div>
+						</div>
+					</div>
+
+					<div class="span12 center">
+						<a 
+							class="coinbase-button" 
+							data-code="a58673bbd97f8fb0e0293c68427e1262" 
+							data-button-style="custom_large" 
+							data-button-text="Sponsor With Bitcoin" 
+							data-custom="bitstarter-bubhubs" 
+							href="https://coinbase.com/checkouts/a58673bbd97f8fb0e0293c68427e1262">
+								Sponsor With Bitcoin</a>
+					</div>
+				</div><!-- /.bitstarter-box -->
+			</section>
+			
 
             <!--################ HEADER END ################-->
 
@@ -213,17 +286,17 @@
 
                     <div class="row margintop20">
                         <div class="span4">
-                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/2tpRxeY.png">all about bub</h2>
-                            <p>No grown ups allowed! We've carved out a special nook on the web just for your baby. No more piggybacking on your profile, no more random lurkers viewing your baby's pictures on your page, and no more unneccessary apps. Best of all, it's free!</p>
+                            <h2><img src="http://i.imgur.com/ecbaRjY.png" height="60" width="60">for the kids</h2>
+                            <p>We've carved out a special nook on the web just for your kids. Share your child's milestones with friends and family securely. No more piggybacking on your profile. No more random lurkers viewing your baby's pictures on your page. Best of all, it's free!</p>
                         </div><!-- /.span4 -->
                         <div class="span4">
-							<h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/ecbaRjY.png">tools you'll love</h2>
-                            <p>Create and import albums, and link pictures to baby's milestones. Create slideshows, photo books, or print your own book from your diary entries to baby. Plan baby's parties using our <b>party</b>hub&trade; tool, and track baby's growth through <b>medi</b>hub&trade;.</p>
+							<h2><img src="http://i.imgur.com/P7RFmHI.png"  height="60" width="60">no to hunger</h2>
+                            <p>Whether or not you create a page for your child, you have the chance to be part of the solution to hunger and food insecurity&mdash;our <b>Chance for Change</b> page features all the ways that you can help with various levels of involvement.</p>
 
                         </div><!-- /.span4 -->
                         <div class="span4">
-                            <h2 class="pull-right"><img class="pull-left" src="http://i.imgur.com/bdbxwxb.png">safe, secure, yours</h2>
-                            <p>Your baby's information will always be secure, and is always going to be 100% yours. Friends and family only see what you want them to see, and only when you've e-vited them. Delete baby's profile in one simple step, with absolutely no crumbs left.</p>
+                            <h2><img src="http://i.imgur.com/GwqUgzz.png" height="60" width="60">an early start</h2>
+                            <p>Gaining awareness for the role we can play in reshaping the future of kids (and not just our own) and the community in general cannot start early enough. No child should ever go hungry if we who are able to do something about it take action now.</p>
 
                         </div><!-- /.span4 -->
                     </div><!-- /.row -->
@@ -236,46 +309,42 @@
 
                                     <div class="thumbnail border-left features">
                                         <div class="feature-icon">
-                                            <i class="icon-cloud-download icon-10x color1"></i>
+                                            <i class="icon-globe icon-10x color1"></i>
                                         </div>
-                                        <!--<i class="icon-medkit icon-10x"></i>-->
-                                        <h4>Cloud Computing</h4>
+                                        <h4>Connect Worldwide</h4>
 
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                        <p>Share your child's profile or your progress in <b>Chance for Change</b> with friends and family wherever they are.</p>
                                     </div>
                                 </li>
                                 <li class="span3">
 
                                     <div class="thumbnail border-none">
                                         <div class="feature-icon">
-                                            <i class="icon-dashboard icon-10x color2"></i>
+                                            <i class="icon-road icon-10x color2"></i>
                                         </div>
-                                        <!--<i class="icon-medkit icon-10x"></i>-->
-                                        <h4>Dashboard</h4>
+                                        <h4>Record Milestones</h4>
 
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                        <p>Awesome visuals of your children's achievements on their page or your accomplishments in helping the community.</p>
                                     </div>
                                 </li>
                                 <li class="span3">
 
                                     <div class="thumbnail border-right">
                                         <div class="feature-icon">
-                                            <i class="icon-download icon-10x color3"></i>
+                                            <i class="icon-camera icon-10x color3"></i>
                                         </div>
-                                        <!--<i class="icon-medkit icon-10x"></i>-->
-                                        <h4>Downloads</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                        <h4>Share Photos and Videos</h4>
+										<p>Whether it's a life event for bub or a picture of the family at a community event, all photos are 100% yours.</p>
                                     </div>
                                 </li>
                                 <li class="span3">
 
                                     <div class="thumbnail border-right">
                                         <div class="feature-icon">
-                                            <i class="icon-lock icon-10x color4"></i>
+                                            <i class="icon-food icon-10x color4"></i>
                                         </div>
-                                        <!--<i class="icon-medkit icon-10x"></i>-->
-                                        <h4>Security</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                        <h4>Help End Hunger</h4>
+                                        <p>No child should ever worry about when or where their next meal will come from. Connect with others to help stop this problem.</p>
                                     </div>
                                 </li>
                             </ul><!-- /.thumbnails -->
@@ -300,18 +369,16 @@
 
                         <div class="carousel-inner">
                             <div class="item active">
-                                <h1><i class="icon-comments"></i> Spectacular Support</h1>
-                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
-
-
+                                <h1><i class="icon-comments"></i> Community Advocacy</h1>
+                                <p class="sub-heading-support">Share your family's efforts to help solve the problem of hunger</p>
                             </div>
                             <div class="item">
-                                <h1><i class="icon-double-angle-up"></i> Parallax Effect</h1>
-                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                <h1><i class="icon-cloud-download"></i> Import Photos and Videos</h1>
+                                <p class="sub-heading-support">Seamlessly import your existing Facebook albums and lock down on security</p>
                             </div>
                             <div class="item">
-                                <h1><i class="icon-desktop"></i> Retina Ready</h1>
-                                <p class="sub-heading-support">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. </p>
+                                <h1><i class="icon-list-alt"></i>  Centralized Action List</h1>
+                                <p class="sub-heading-support">Involve your family in helping out the community much more easily</p>
 
                             </div>
 
@@ -321,275 +388,123 @@
 
                     </div>
                 </div>
-                <div class="container">
+				
+                <div class="container support">
 
                     <div class="row center">
-
-
-                        <div class="span4 margintop20">
+						<h4 class="sub-heading">for bub</h4>
+                        <div class="span4 margintop10">
                             <div class="row left">
                                 <div class="span1">
-                                    <i class="icon-phone support-icon color1"></i>
+                                    <i class="icon-gift support-icon color1"></i>
                                 </div>
                                 <div class="span3">
-                                    <h2>24/7/365</h2>
+                                    <h2>Online Registry</h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> Centralized wish list</li>
+                                        <li><i class="icon-ok"></i> Make gift-giving easier</li>
+                                        <li><i class="icon-ok"></i> Direct links to buy and send gifts</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="span4 margintop20">
+                        <div class="span4 margintop10">
                             <div class="row left">
-                                <div class="span1"><i class="icon-comments support-icon color2"></i></div>
+                                <div class="span1"><i class="icon-book support-icon color2"></i></div>
                                 <div class="span3">
-                                    <h2>Live Chat</h2>
+                                    <h2>Education Fund</h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> Link to your child's funds</li>
+                                        <li><i class="icon-ok"></i> Allow for secure contributions</li>
+                                        <li><i class="icon-ok"></i> Plan for the future with our tools</li>
                                     </ul></div>
                             </div>
                         </div>
-                        <div class="span4 margintop20">
+                        <div class="span4 margintop10">
                             <div class="row left">
-                                <div class="span1"><i class="icon-group support-icon color3"></i></div>
+                                <div class="span1"><i class="icon-link support-icon color4"></i></div>
                                 <div class="span3">
-                                    <h2>Community</h2>
+                                    <h2>(Un)Link Features</h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> You dictate how much you share</li>
+                                        <li><i class="icon-ok"></i> Link features or keep them separate</li>
+                                        <li><i class="icon-ok"></i> Easily turn features on and off</li>
                                     </ul></div>
                             </div>
                         </div>
-                        <div class="span4 margintop40">
+					</div><!-- /.row center -->
+					
+					<div class="row center">
+						<hr class="line">
+						<h4 class="sub-heading">for the community</h4>
+                        <div class="span4 margintop10">
                             <div class="row left">
-                                <div class="span1"><i class="icon-facetime-video support-icon"></i></div>
+                                <div class="span1"><i class="icon-magic support-icon"></i></div>
                                 <div class="span3">
-                                    <h2>Tutorials</h2>
+                                    <h2>event<b>hubs</b></h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> Plan your event in minutes</li>
+                                        <li><i class="icon-ok"></i> Get started with our templates</li>
+                                        <li><i class="icon-ok"></i> Add delegates to tasks</li>
                                     </ul></div>
                             </div>
                         </div>
-                        <div class="span4 margintop40">
+                        <div class="span4 margintop10">
                             <div class="row left">
-                                <div class="span1"><i class="icon-book support-icon"></i></div>
+                                <div class="span1"><i class="icon-edit support-icon"></i></div>
                                 <div class="span3">
-                                    <h2>Manual</h2>
+                                    <h2>Education Reboot</h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> Set up or sign up for sessions</li>
+                                        <li><i class="icon-ok"></i> Learn about sustainable measures</li>
+                                        <li><i class="icon-ok"></i> Spread the word!</li>
                                     </ul></div>
                             </div>
                         </div>
-                        <div class="span4 margintop40">
+                        <div class="span4 margintop10">
                             <div class="row left">
-                                <div class="span1"><i class="icon-file support-icon "></i></div>
+                                <div class="span1"><i class="icon-group support-icon"></i></div>
                                 <div class="span3">
-                                    <h2>Docs</h2>
+                                     <h2>Giving Back</h2>
                                     <ul class="unstyled">
-                                        <li><i class="icon-ok"></i> Unlimited support in minutes</li>
-                                        <li><i class="icon-ok"></i> From your  dashboard</li>
-                                        <li><i class="icon-ok"></i> Ask us about anything</li>
+                                        <li><i class="icon-ok"></i> A central hub to donate used goods</li>
+                                        <li><i class="icon-ok"></i> Find or organize local meetups</li>
+                                        <li><i class="icon-ok"></i> Easily create a page for your meetup</li>
                                     </ul></div>
                             </div>
                         </div>
+				
 
-
-                    </div>
-
-
-
-                </div>
+                    </div><!-- /.row center -->
+                </div><!-- /.container support -->
 
             </section>
 
             <!--################ PORTFOLIO SECTION START ################-->
-
-            <section class="portfolio home-portfolio">
-
-                <div class="container" id="portfolio">
-
-                    <div class="row">
-                        <div class="span12 center">
-                            <h1 class="big-heading">Portfolio</h1>
-                            <h4 class="sub-heading">see come of our cool projects...</h4>
-
-
-
-                        </div>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="span12">
-                            <div id="filters_container">
-                                <ul id="filters">
-                                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".video">Video</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".art">Art</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".illustration">Illustration</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".print">Print</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".web">Web</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>        
-                    <div class="row" id="portfolio-container">
-                        <div class="span3 project art">
-
-                            <img src="images/project1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Image</h5>
-
-                                <a href="images/project1.jpg" class="fancybox-media btn btn-normal" data-title-id="title-01"  rel="portfolio">View details</a>
-                            </div>
-
-                            <div id="title-01" class="info hidden">
-                                <h2>Image Detials</h2>
-                                <div class="fancybody">Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem <a href="#">lacinia quam</a> venenatis vestibulum. Maecenas sed diam eget risus varius.</div>
-                            </div>
-
-
-
-                        </div>
-
-
-
-                        <div class="span3 project web">
-
-                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="single-portfolio.html" class="fancybox-media btn btn-normal" >View details</a>
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="span3 project video">
-
-                            <img src="images/project1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                             <div class="cnt">
-                                <h5>Video</h5>
-
-                                <a href="http://vimeo.com/24030911" class="fancybox-media btn btn-normal" data-title-id="title-03"  rel="portfolio">View details</a>
-                            </div>
-
-                            <div id="title-03" class="info hidden">
-                                <h2>Image Detials</h2>
-                                <div class="fancybody">Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem <a href="#">lacinia quam</a> venenatis vestibulum. Maecenas sed diam eget risus varius.</div>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                        <div class="span3 project web print">
-
-                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="#" class="btn btn-normal">View details</a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project art print">
-
-                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="#" class="btn btn-normal">View details</a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project art web">
-
-                            <img src="images/landscape-heart.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="#" class="btn btn-normal">View details</a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project print web">
-
-                            <img src="images/project1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="#" class="btn btn-normal">View details</a>
-                            </div>
-
-
-
-
-
-                        </div>
-                        <div class="span3 project  web">
-
-                            <img src="images/project1.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <h5>Project</h5>
-
-                                <a href="#" class="btn btn-normal">View details</a>
-                            </div>
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-                    </div>
-                </div>
-
-
-            </section>
+			<section class="portfolio home-portfolio">
+				<div class="container" id="portfolio">
+					<div class="row">
+						<div class="span12 center">
+							<h1 class="big-heading">What if...</h1>
+							<h4 class="sub-heading">things could get better if we work together</h4>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="span12">
+							<ul class="unstyled list">
+								<li><i class="icon-double-angle-right icon-2x color3"></i> ...you could choose who to share your child's milestones and major life events with?</li>
+								<li><i class="icon-double-angle-right icon-2x color3"></i> ...you could ensure the safety of your child's online identity? </li>
+								<li><i class="icon-double-angle-right icon-2x color3"></i> ...you could engage family and friends online without sacrificing personal data?</li>
+								<li><i class="icon-double-angle-right icon-2x color3"></i> <b>...you could make a direct impact on someone who worries about where their next meal would come from?</b></li>
+								<li><i class="icon-double-angle-right icon-2x color3"></i> <b>...you could directly help a child find their way out of hunger, malnutrition, and poor health?</b> </li>
+								<li><i class="icon-double-angle-right icon-2x color3"></i> <b>...you could do your part to promote a healthy, sustainable, and socially responsible way of living?</b> </li>
+</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- /.container -->
+			</section> 
 
             <!--################ TESTIMONIALS SECTION START ################-->
 
@@ -597,86 +512,100 @@
             <section id="testimonials">
                 <div id="testimonials-background" data-stellar-background-ratio="0.5">
 
-                    <h1>Testimonials  <i class="icon-thumbs-up"></i></h1>
-                    <h2 class="sub-heading-support">What others say about us</h2>
+                    <h1>FAQs  <i class="icon-comments-alt"></i></h1>
+                    <h2 class="sub-heading-support">Frequently Asked Questions</h2>
 
                 </div>
                 <div class="container">
-                    <div class="row center margintop40">
+                    <div class="row margintop40">
+						<div class="accordion" id="accordion-faqs">
+						
+							<!-- faq1 -->
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#faq1">
+										What's a <b>bub</b>hubs page?</a>
+								</div>
+								<div id="faq1" class="accordion-body collapse">
+									<div class="accordion-inner">
+										It looks like a regular social networking profile, but the <b>bub</b>hubs are specially designed with the safety of the children's internet identities in mind. 
+										Now you can feel safe posting photos and videos of your children and sharing them with your family and friends.
+									</div>
+								</div>
+							</div>
+							
+							<!-- faq2 -->
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#faq2">
+										If I create a <b>bub</b>hubs page for my child, who can view it?</a>
+								</div>
+								<div id="faq2" class="accordion-body collapse">
+									<div class="accordion-inner">
+										We value you and your child's privacy, so only the people you personally invite would be able to see it. You can even change the privacy settings in each section of the page!
+									</div>
+								</div>
+							</div>
+							
+							<!-- faq3 -->
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#faq3">
+										Can I import photo albums I have of my child that's on my Facebook page?</a>
+								</div>
+								<div id="faq3" class="accordion-body collapse">
+									<div class="accordion-inner">
+										Yes! You can easily move any photos and albums from Facebook to your hub. As an added safety feature, you can also set the privacy settings on each album on your hub.
+									</div>
+								</div>
+							</div>
+							
+							<!-- faq4 -->
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#faq4">
+										What's the <b>Chance for Change</b> page?</a>
+								</div>
+								<div id="faq4" class="accordion-body collapse">
+									<div class="accordion-inner">
+										Whether or not you choose to create a profile for your kids, you can still sign up to help do your part in fixing the problem of hunger and food insecurity in your community and even beyond. 
+										In the United States alone, 1 in 4 children don't know where their next meal will be coming from. <b>Chance for Change</b> is a venue for those of us who want to create and implement solutions 
+										to this very serious problem.
+									</div>
+								</div>
+							</div>
+							
+							<!-- faq5 -->
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#faq5">
+										I don't have kids, so I don't need to create a <b>bub</b>hubs page. Can I still be part of <b>Chance for Change</b>?</a>
+								</div>
+								<div id="faq5" class="accordion-body collapse">
+									<div class="accordion-inner">
+										You are absolutely welcome to sign up for the <b>Chance for Change</b> page. In fact, we encourage you to spread the word to everyone you know! We need all the help we can get to ensure 
+										that no child goes hungry and that our future generation understands the importance of a healthy and sustainable way of life.
+									</div>
+								</div>
+							</div>
+							
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faqs" href="#collapseTwo">Why should I sign up?</a>
+								</div>
+								<div id="collapseTwo" class="accordion-body collapse">
+									<div class="accordion-inner">
+										<p>It's free, for starters! The information you share on your <b>bub</b>hubs profile is safe, secure and 100% yours. We will not use your personal information nor share it without your permission. Most importantly, you can delete your account in one simple step, leaving absolutely zero web crumbs. </p>
+										<p>And if you sign up at <b>Chance for Change</b>, you have the opportunity to stand up to the problem of hunger and food insecurity. No child should ever go hungry, or have their health suffer from 
+										insufficient nutrition and an unhealthy diet.</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- /.accordion -->
+						
+                    </div><!-- /.row center -->
 
-                        <div id="carousel_fade_2" class="span4 carousel slide carousel-fade">
-                            <div class="carousel-inner ">
-                                <div class="item  testimonial active">
-
-                                    <img src="images/face-1.png">
-                                    <h4>Fading Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-                                <div class="item  testimonial">
-                                     <img src="images/face-2.png">
-                                    <h4>Fading Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-                                <div class="item  testimonial">
-                                    <img src="images/face-3.png">
-                                    <h4>Fading Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-
-                            </div>
-                            <button class="carousel-control left car-button" href="#carousel_fade_2" data-slide="prev"><i class="icon-chevron-left"></i></button>
-                            <button class="carousel-control right car-button" href="#carousel_fade_2" data-slide="next"><i class="icon-chevron-right"></i></button>
-
-
-                        </div>
-
-                        <div id="carousel_vertical_testimonial" class="span4 carousel slide vertical">
-                            <div class="carousel-inner">
-                                <div class="item testimonial active">
-
-                                    <img src="images/face-1.png">
-                                    <h4>Sliding  Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-                                <div class="item  testimonial">
-                                    <img src="images/face-3.png">
-                                    <h4>Sliding  Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-                                <div class="item  testimonial">
-                                    <img src="images/face-2.png">
-                                    <h4>Sliding  Testimonials</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                                </div>
-
-                            </div>
-                            <button class="carousel-control left car-button" href="#carousel_vertical_testimonial" data-slide="prev"><i class="icon-chevron-left"></i></button>
-                            <button class="carousel-control right car-button" href="#carousel_vertical_testimonial" data-slide="next"><i class="icon-chevron-right"></i></button>
-
-
-                        </div>
-                        <div  class="span4">
-
-                            <div class="item  testimonial active">
-
-                                <img src="images/face-1.png">
-                                <h4>Static</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
+                </div><!-- /.container -->
             </section>
             <!--################ TESTIMONIALS  SECTION END ################-->
 
@@ -686,7 +615,7 @@
             <section id="call-to-action" class="margintop20 marginbot20">
 
                 <div class="call-to-action-link">
-                    <a href="#"><span>Buy it for your Next Project →</span></a>
+                    <a href="#sponsor"><span>Sponsor this project now →</span></a>
                 </div>
 
             </section>
@@ -700,30 +629,36 @@
 
                     <div class="row center">
                         <div class="span12">
-                            <h1 class="big-heading">Latest News</h1>
-                            <p>Curabitur nisi mi, tincidunt a vehicula non, euismod sed felis.</p>
+                            <h1 class="big-heading">What's New</h1>
+							<h4 class="sub-heading">Stay updated on the latest news</h4>
                         </div>
                     </div>
                     <div class="row margintop40">
                         <div class="span6 left shadowbox homepage-post">
 
-                            <div class="post-img picture"><img src="images/blog2.jpg" alt="" />
+                            <div class="post-img picture">
+								<center><img src="http://www.pri.org/thumbnail.php?file=/MELANYNETTLES_2_e1375299439966_532595677.jpg&size=tpl4028_article_medium" alt="" /></center>
                                 <div class="overlay">
                                     <div class="op"></div>
                                     <ul class="icons">
-                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
+                                        <li><span class="bg"></span><a 
+											target="_article" 
+											href="http://www.pri.org/stories/science/environment/urbanites-look-to-harvest-local-food-crops-as-hedge-against-food-insecurity-14574.html" class="icon-link"></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="post">
 
-                                <div class="headline"><h2 class="muted">news heading...</h2></div>
-                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>12th<br/>August</h2>
+                                <div class="headline"><h2 class="muted">Urbanites look to harvest local food crops as hedge against food insecurity</h2></div>
+                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>1st<br/>August</h2>
 
                                 </div>
                                 <div class="post-content margintop">
                                     <div class="post-description">
-                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
+                                        <p>External threats, like terrorism, internal desires for local foods and a host of more mundane challenges have made more urbanites interested in getting more of their food closer to home. In some cities, that means a greater acceptance of foraging, or eating the food that's all around us. 
+										<a class="read-more flink" 
+											target="_article" 
+											href="http://www.pri.org/stories/science/environment/urbanites-look-to-harvest-local-food-crops-as-hedge-against-food-insecurity-14574.html">Read more</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -731,25 +666,31 @@
                         </div>
                         <div class="span6 left shadowbox homepage-post">
 
-                            <div class="post-img picture"><img src="images/blog2.jpg" alt="" />
+                            <div class="post-img picture">
+								<center><img src="http://www.trbimg.com/img-51f94ffe/turbine/la-lh-san-francisco-giants-to-plant-first-edib-001/543" alt="" /></center>
 
                                 <div class="overlay">
                                     <div class="op"></div>
                                     <ul class="icons">
-                                        <li><span class="bg"></span><a href="#" class="icon-link"></a></li>
+                                        <li><span class="bg"></span><a 
+											target="_article" 
+											href="http://www.latimes.com/features/home/la-lh-san-francisco-giants-edible-garden-20130731,0,2594927.story" class="icon-link"></a></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="post">
 
-                                <div class="headline"><h2 class="muted">post heading ...</h2></div>
-                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>21st<br/>March</h2>
+                                <div class="headline"><h2 class="muted">San Francisco Giants to plant first edible garden at U.S. ballpark</h2></div>
+                                <div class="post-meta"><h2 class="big-h2-heading"><i  class="icon-calendar"></i>30th<br/>July</h2>
 
                                 </div>
                                 <div class="post-content margintop">
                                     <div class="post-description">
-                                        <p>Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.</p>
+                                        <p>"With rows of kale and strawberries and eggplant, the Giants are going to help encourage local youth to eat healthy -- even at the ballpark," Obama said during a White House ceremony honoring the San Francisco Giants as 2012 World Champions. 
+										<a class="read-more flink" 
+											target="_article" 
+											href="http://www.latimes.com/features/home/la-lh-san-francisco-giants-edible-garden-20130731,0,2594927.story">Read more</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -757,131 +698,10 @@
                         </div>
 
 
-                    </div>
-
-                    <hr class="line">
-                    <div class="row">
-                        <div class="span12 center">
-                            <h1 class="big-heading">The Game Plan</h1>
-                            <h4 class="sub-heading">Rolling features out in phases</h4>
+                    </div><!-- /.row -->
 
 
-
-                        </div>
-
-
-                    </div>
-                    <div class="row" id="pricing">
-                        <div class="span3">
-                            <div class="price-plan price-plan-business">
-                                <h2>PHASE 1</h2>
-
-                                <div class="price">
-                                    <div class="inside">
-                                        <span class="super">$</span><span class="amt">0</span> <span class="sub">/mo</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="info">
-                                    <ul>
-                                        <li class="bold">Full Email Support</li>
-                                        <li>Unlimited User Interactions</li>
-
-                                        <li class="signup"><a href="#">SIGN UP</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="span3">
-                            <div class="price-plan ">
-                                <h2>Starter</h2>
-
-                                <div class="price">
-                                    <div class="inside">
-                                        <span class="super">$</span><span class="amt">8</span> <span class="sub">/mo</span>
-                                    </div>
-
-                                </div>
-                                <div class="most-popular">
-                                    <span>
-                                        <p>Phase 2</p>
-                                    </span>
-                                </div>
-                                <div class="info">
-                                    <ul>
-                                        <li class="bold">Full Email Support</li>
-                                        <li class="bold">Unlimited User Interactions</li>
-                                        <li class="bold">Unlimited Pages</li>
-                                        <li>Mobile Store</li>
-                                        <li>Social Tracking</li>
-                                        <li class="signup"><a href="#">SIGN UP</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="price-plan price-plan-business">
-                                <h2>BEST</h2>
-
-                                <div class="price">
-                                    <div class="inside">
-                                        <span class="super">$</span><span class="amt">24</span> <span class="sub">/mo</span>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <ul>
-                                        <li class="bold">Full Email Support</li>
-                                        <li class="bold">Ecommerce Addons</li>
-                                        <li>2 GB Storage</li>
-                                        <li>Custom Domain <span class="free">Free</span></li>
-                                        <li>24/7 Support</li>
-                                        <li>&nbsp;</li>
-                                        <li>&nbsp;</li>
-                                        <li class="signup"><a href="#">SIGN UP</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="price-plan price-plan-unlimited">
-                                <h2>POPULAR</h2>
-
-                                <div class="price">
-                                    <div class="inside">
-                                        <span class="super">$</span><span class="amt">16</span> <span class="sub">/mo</span>
-                                    </div>
-
-                                    <div class="most-popular">
-                                        <span>
-                                            <p>New</p>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <ul>
-                                        <li class="bold">Unlimited Pages & Posts</li>
-                                        <li class="bold">Unlimited Bandwidth</li>
-                                        <li class="bold">Unlimited Storage</li>
-                                        <li class="bold">Unlimited Users</li>
-                                        <li>Responsive Website</li>
-                                        <li>Custom Domain <span class="free">Free</span></li>
-                                        <li>24x7 Support</li>
-                                        <li class="signup"><a href="#">SIGN UP</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
+                </div><!-- /.container -->
 
             </section>
 
@@ -898,22 +718,25 @@
                 <div id="contact-background" data-stellar-background-ratio="0" >
 
                     <h1>Contact Us</h1>
-                    <p class="sub-heading-contact">WHERE WE WORK </p>
+                    <p class="sub-heading-contact">we'd love to hear from you </p>
                 </div>
                 <div class="container">
                     <div class="row margintop20">
 
 
-                        <div class="span6">
-                            <h2 class="big-h2-heading"><i  class="icon-envelope-alt"></i> Contact Us</h2>
-                            <p>Let us know what you think and we will get back to you with a cool reply!</p>
-                            <form class="form-main">
+                        <div class="span6 offset3">
+                            <h2 class="big-h2-heading center"><i  class="icon-envelope-alt"></i> Contact Us</h2>
+                            <p>Drop us a line! We won't share your contact information with any third parties, and only collect yourr email address so we can write you back.</p>
+                            <form class="form-main" action="post">
 
                                 <fieldset>
+									<div id="form-alert" class="alert">
+									</div>
+								
                                     <div class="clearfix">
                                         <label for="name"><span>Name:</span></label>
                                         <div class="input">
-                                            <input  id="name" name="name" type="text" value="" class="input-xlarge">
+                                            <input  id="name" name="name" type="text" value="" class="input-xlarge" tabindex="1">
 
                                         </div>
 
@@ -923,33 +746,25 @@
                                     <div class="clearfix">
                                         <label for="email"><span>Email:</span></label>
                                         <div class="input">
-                                            <input  id="email" name="email" type="text" value="" class="input-xlarge">
+                                            <input  id="email" name="email" type="text" value="" class="input-xlarge" tabindex="2">
                                         </div>
                                     </div>
 
                                     <div class="clearfix">
                                         <label for="message"><span>Message:</span></label>
                                         <div class="input">
-                                            <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
+                                            <textarea tabindex="3" class="input-xlarge" id="message" name="message" rows="7"></textarea>
+											<input  id="form-alt" name="form-alt" type="text" value="" class="info hidden">
+											<input  id="actionRequested" name="actionRequested" value="bh-email" type="hidden" >
                                         </div>
                                     </div>
 
-                                    <div class="actions">
+                                    <div class="actions center">
                                         <button tabindex="3" type="submit" class="btn btn-landing ">Send</button>
                                     </div>
                                 </fieldset>
 
                             </form>
-                        </div>
-                        <div class="span5 offset1">
-                            <h2 class="big-h2-heading"><i  class="icon-map-marker"></i> Find Us</h2>
-                            <p>Let us know what you think and we will get back to you with a cool reply!</p>
-                            <p><i  class="icon-road"></i> Street Name - 1215/3, Our Land, Earth</p>
-                            <p><i  class="icon-home"></i> London</p>
-                            <p><i  class="icon-phone"></i> +1-234-56789</p>
-                            <iframe id="small-map" width="350" height="320" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;aq=0&amp;oq=Los&amp;sll=50.143066,18.85267&amp;sspn=0.057207,0.168915&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&amp;ll=34.052234,-118.243685&amp;spn=0.036979,0.084457&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
-
-
                         </div>
                     </div>
                 </div>
@@ -973,14 +788,15 @@
 
                 <div class="row center">
 
-                    <h2>as seen on the</h2>
+                    <h2>as seen on</h2>
                 </div>
                 <div class="container">
                     <div class="row center">
                         <div class="as-seen">
-                            <div class="span2">
-                                <img src="images/client-1.png" alt="Tc">
+                            <div class="span12">
+                                <img src="https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/template/logo.svg" alt="Tc">
                             </div>
+							<!--
                             <div class="span2">
                                 <img src="images/client-2.png" alt="Tc">
                             </div>
@@ -996,6 +812,7 @@
                             <div class="span2">
                                 <img src="images/client-6.png" alt="Tc">
                             </div>
+							-->
 
                         </div>
 
@@ -1021,49 +838,33 @@
             <div class="container">
                 <div class="row">
                     <div class="span4">
-                        <!--<h2>about us...</h2>-->
-                        <img src="images/logo.png" >
+                        <div class="brand"><b>bub</b>hubs</div>
 
-                        <!--<p><br /Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>-->
-                        <p><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+                        <p><br />The responsible social network for families 
+						<br />who want to build a better future.</p>
                         <p class="copyright">
-                            © 2013 Purity Bootstrap Template
+                            © 2013 <b>bub</b>hubs and co.
                         </p>
                     </div>
-                    <div class="span2">
+                    <div class="span3 offset1">
                         <h2>links </h2>
                         <ul class="unstyled footer-links">
-                            <li><a href="#" class="flink">About Us</a></li>
-                            <li><a href="#" class="flink">The Team</a></li>
-                            <li><a href="#" class="flink">Blog</a></li>
-                            <li><a href="#" class="flink">Contact</a></li>
-                            <li><a href="#" class="flink">Privacy Policy</a></li>
-                            <li><a href="#" class="flink">Terms of Use</a></li>
+                            <li><a href="#top" class="flink">Home</a></li>
+                            <li><a href="#features" class="flink">Features</a></li>
+                            <li><a href="#support" class="flink">The Extra Mile</a></li>
+                            <li><a href="#testimonials" class="flink">FAQs</a></li>
+                            <li><a href="#contact" class="flink">Contact</a></li>
                         </ul>
                     </div>
 
-                    <div class="span3">
+                    <div class="span3 offset1">
                         <h2>subscribe </h2>
 
-                        <a href="#" class="social-network sn2 behance"></a>
                         <a href="#" class="social-network sn2 facebook"></a>
-                        <a href="#" class="social-network sn2 pinterest"></a>
-                        <a href="#" class="social-network sn2 flickr"></a>
-                        <a href="#" class="social-network sn2 dribbble"></a>
-                        <a href="#" class="social-network sn2 lastfm"></a>
-                        <a href="#" class="social-network sn2 forrst"></a>
-                        <a href="#" class="social-network sn2 xing"></a>      
+                        <a href="#" class="social-network sn2 twitter"></a>      
 
 
                     </div>
-
-                    <div class="span3">
-                        <h2 class="center"><i class="icon-twitter"></i></h2>
-                        <ul id="twitter" class="unstyled">
-
-                        </ul>
-                    </div>
-
 
                 </div>
             </div>
@@ -1097,22 +898,16 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/retina.js"></script>
 
-        <!--     
-        *************** RETINA JS FUNCTIONALITY   ****************
-        
-        The script assumes you use Apple's prescribed high-resolution modifier (@2x) to denote
-        high-resolution image variants on your server.
-        
-        For example, if you have an image on your page that looks like this:
-        <img src="/images/my_image.png" />
-        
-        The script will check your server to see if an alternative image exists at this path:
-        "/images/my_image@2x.png"
-        
-        That's it! 
-        :)
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        <!--RETINA JS END-->
+		  ga('create', 'UA-43006847-1', 'bubhubs.com');
+		  ga('send', 'pageview');
+
+		</script>
 
 
         <!--REGISTER MODAL --> 

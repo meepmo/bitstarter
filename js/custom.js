@@ -8,7 +8,59 @@ $(window).load(function() {
 
 
 });
+
+function isEmail(email) {
+  var emailPattern = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return emailPattern.test(email);
+}
+
 $(document).ready(function() {
+	$('.form-main').submit(
+		function () {
+			var errorMessage = '';
+			
+			if (!isEmail($.trim($('#email').val()))) 
+				errorMessage = 'We\'ll need a valid Email Address so we can write you back.';
+			
+			else if ($.trim($('#name').val()).length == 0 || 
+				$.trim($('#email').val()).length == 0 || 
+				$.trim($('#message').val()).length == 0) 
+				
+				errorMessage = 'We need all fields filled out so we can write you back.';
+			
+
+			if (errorMessage.length > 0) {
+				$('#form-alert')
+					.addClass('alert-error')
+					.html('<b>Oops!</b> ' + errorMessage)
+					.show('500')
+					.focus();
+					
+				return false;
+			
+			} else { 
+				$.ajax({
+					url: 'http://www.nicebigsmile.com/ajax.php',
+					dataType: 'jsonp', 
+					type: 'GET',
+					data: $('.form-main').serialize(),
+					error: function() {
+						$('#form-alert')
+							.addClass('alert-success')
+							.html('<b>Thanks!</b> We\'ll be in touch!')
+							.show('500')
+							.focus();
+					}
+				});
+				
+				return false;
+			}
+			
+				
+				
+
+		}
+	);
 
     $('#carousel_vertical_slide,#carousel_fade, #carousel_vertical_testimonial, #carousel_fade_icons, #carousel_fade_1, #carousel_fade_2, #carousel_testimonial_2').carousel({
         interval: 3000
