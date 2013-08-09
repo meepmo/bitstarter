@@ -513,13 +513,14 @@ a.post-entry:hover {
 }
 
 #features-banner {
-    background-image:url('http://farm1.staticflickr.com/96/247265947_5bcfc2b4f0_b.jpg');
+    background-image:url('http://farm4.staticflickr.com/3199/2697058141_98718115ca_b.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;
     padding:150px 0;
     text-shadow:1px 1px 1px #000;
     background-size:cover;
+	background-position: 0 -200px;
 }
 
 #features-banner h1 {
@@ -595,7 +596,7 @@ a.post-entry:hover {
 
 /*Support*/
 #support-banner {
-    background-image:url('http://farm5.staticflickr.com/4011/4581338684_2521ccb851_b.jpg');
+    background-image:url('http://farm2.staticflickr.com/1044/571956579_96782c9dbb_b.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
 	background-position: 0 -100px;
@@ -603,6 +604,7 @@ a.post-entry:hover {
     padding:150px 0;
     text-shadow:1px 1px 1px #000;
     background-size:cover;
+	background-position: 0 -500px;
 }
 
 #support-banner h1 {
