@@ -3395,6 +3395,17 @@ section.typography{
 .bitstarter-pitch {
 	background: #e8e8e8;
 }
+.paypal-dropdown {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	display: inline;
+	text-align: center;
+}
+.paypal-dropdown select {
+	font-size: 12px;
+	margin-top: 10px;
+	width: 120px;
+}
 
 
 /*SUPPORT*/
