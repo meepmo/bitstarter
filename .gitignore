@@ -1,1 +1,9 @@
 node_modules
+images-new
+images
+*.txt
+checks.json
+.DS_Store
+grader.js
+package.json
+index.orig.html
