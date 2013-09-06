@@ -3,7 +3,8 @@ $(window).load(function() {
         animation: "fade",
         animationLoop: true,
         controlNav: true,
-        directionNav: false
+        directionNav: false,
+		animationSpeed: 700
     });
 
 
@@ -65,7 +66,7 @@ $(document).ready(function() {
 	);
 
     $('#carousel_vertical_slide,#carousel_fade, #carousel_vertical_testimonial, #carousel_fade_icons, #carousel_fade_1, #carousel_fade_2, #carousel_testimonial_2').carousel({
-        interval: 3000
+        interval: 5500
 
     });
 

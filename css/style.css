@@ -542,8 +542,12 @@ a.post-entry:hover {
 }
 
 #features .container h2,
-#features .container p b {
+#features .container p b.color1 {
 	color: #ffa333;
+}
+
+#features .container p b {
+	color: #333333;
 }
 
 #features .thumbnail {
